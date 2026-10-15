@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRO MEALS</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #ff6b00;
+  padding: 25px;
+}
+h1 { margin: 0; font-size: 35px; }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+.card {
+  background: #242424;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-sizing: border-box;
+}
+.food { font-size: 65px; }
+.price {
+  color: #ff9b45;
+  font-size: 22px;
+  font-weight: bold;
+}
+button {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+footer {
+  padding: 25px;
+  background: #222;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍔 BRO MEALS</h1>
+  <p>Eng mazali fast food — bizda!</p>
+</header>
+
+<h2>🍟 BIZNING MENYU</h2>
+
+<div class="menu">
+
+  <div class="card">
+    <div class="food">🌭</div>
+    <h3>Classic Hot Dog</h3>
+    <p>Non, sosiska, ketchup, mayonez</p>
+    <p class="price">12 000 so'm</p>
+    <button onclick="order('Classic Hot Dog')">Buyurtma berish</button>
+  </div>
+
+  <div class="card">
+    <div class="food">🍔</div>
+    <h3>BRO Burger</h3>
+    <p>Bulochka, kotlet, pishloq, sous</p>
+    <p class="price">25 000 so'm</p>
+    <button onclick="order('BRO Burger')">Buyurtma berish</button>
+  </div>
+
+  <div class="card">
+    <div class="food">🍟</div>
+    <h3>Fri kartoshka</h3>
+    <p>Qarsildoq kartoshka</p>
+    <p class="price">12 000 so'm</p>
+    <button onclick="order('Fri kartoshka')">Buyurtma berish</button>
+  </div>
+
+  <div class="card">
+    <div class="food">🥪</div>
+    <h3>BRO Sandwich</h3>
+    <p>Tovuq go'shti, non va sous</p>
+    <p class="price">20 000 so'm</p>
+    <button onclick="order('BRO Sandwich')">Buyurtma berish</button>
+  </div>
+
+</div>
+
+<footer>
+  <h3>BRO MEALS 🍔</h3>
+  <p>Buyurtma uchun telefon:</p>
+  <p>Telefon raqamingizni shu yerga yozing</p>
+  <p>© 2026 BRO MEALS</p>
+</footer>
+
+<script>
+function order(food) {
+  alert(food + " tanlandi! Buyurtma berish uchun telefon orqali bog'laning.");
+}
+</script>
+
+</body>
+      </html>
